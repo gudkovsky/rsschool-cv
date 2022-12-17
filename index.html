@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="index-page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilya Gudkov. Junior frontend developer</title>
+  <link rel="icon" href="./assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body class="page-body">
+
+  <header class="page-header">
+    <nav class="navigation" id="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a href="#contacts" class="navigation__link">Contacts</a></li>
+        <li class="navigation__item"><a href="#summary" class="navigation__link">Summary</a></li>
+        <li class="navigation__item"><a href="#skills" class="navigation__link">Skills</a></li>
+        <li class="navigation__item"><a href="#code" class="navigation__link">Code</a></li>
+        <li class="navigation__item"><a href="#education" class="navigation__link">Education</a></li>
+        <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+        <li class="navigation__item"><a href="#language" class="navigation__link">Language</a></li>
+        <li class="navigation__item"><a href="#goals" class="navigation__link">My goals</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main class="main-content">
+      <div class="page-wrapper">
+
+        <section class="main-content__head-section">
+          <h2 class="visually-hidden">Profile</h2>
+          <img class="user-pic" src="./assets/img/pic1.jpg" height="300" alt="Main photo (user-pic)">
+
+        <div>
+          <h1 class="main-heading">Ilya Gudkov</h1>
+          <p class="main-description">Junior frontend developer</p>
+        </div>
+
+        </section>
+
+        <section class="details">
+          <h2 class="visually-hidden">Details about author</h2>
+          <section class="contacts details__item">
+            <h2 class="details-heading" id="contacts">Contacts</h2>
+
+            <ul class="contacts-list">
+              <li class="contacts-item location">
+                <a class="contacts-item__link contacts-link" href="https://goo.gl/maps/qXfqSwq6FsYNmuje7">Moscow, Russia</a>
+              </li>
+
+              <li class="contacts-item email">Email:
+                <a class="contacts-item__mail contacts-link" href="mailto:gudkov.id@mail.ru">gudkov.id@mail.ru</a>
+              </li>
+
+              <li class="contacts-item github">Github:
+                <a class="contacts-item__github contacts-link" href="https://github.com/gudkovsky">github.com/gudkovsky</a>
+              </li>
+
+              <li class="contacts-item telegram">Telegram:
+                <a class="contacts-item__telegram contacts-link" href="https://t.me/gudkovsky">@gudkovsky</a>
+              </li>
+
+              <li class="contacts-item discord">Discord:
+                <a class="contacts-item__discord contacts-link" href="https://discordapp.com/users/1030422634074222622/">@altered.cat#3735</a>
+              </li>
+
+            </ul>
+          </section>
+
+          <section class="summary details__item">
+            <h2 class="details-heading" id="summary">Summary</h2>
+
+            <p class="summary__description">
+              I am a beginner web developer, I started learning programming languages in 2022, because I wanted to change my field of activity to such a promising and interesting one as web development.
+              Programming attracts me with thoughtful solutions and tools, logical solutions and opportunities for development and relocation.
+            </p>
+
+
+          </section>
+
+          <section class="skills details__item">
+            <h2 class="details-heading" id="skills">Skills</h2>
+
+            <table class="skills-table">
+              <tr class="skills-list">
+                <td class="skills-item">HTML5</td>
+                <td class="skills-description">I can write a good BEM markup</td>
+              </tr>
+
+              <tr class="skills-list">
+                <td class="skills-item">CSS3</td>
+                <td class="skills-description">I understand how to work with classes, forms, pseudo-elements, pseudo-classes, box-model, display types, flex and grid systems. I can use my knowledge and sense of perfection to add styles to a web-page</td>
+              </tr>
+
+              <tr class="skills-list">
+                <td class="skills-item">Git, Github</td>
+                <td class="skills-description">Basic knowledge</td>
+              </tr>
+
+              <tr class="skills-list">
+                <td class="skills-item">Graphics</td>
+                <td class="skills-description">Figma and Photoshop basic knowledge</td>
+              </tr>
+            </table>
+          </section>
+
+          <section class="code-example details__item">
+            <h2 class="details-heading" id="code" title="I took it from web, don't know JS yet :D" >Code example</h2>
+
+            <pre class="code-example__item"><code >
+              function checkParent (src, dest) {
+               while (src != null) {
+                 if (src.tagName == dest) return src
+                  src = src.parentElement
+               }
+               return null
+              }
+            </code></pre>
+
+          </section>
+
+          <section class="courses details__item">
+            <h2 class="details-heading" id="courses">Courses</h2>
+
+            <ul class="courses-list">
+              <li>
+                <table class="courses-item">
+                  <tr>
+                    <td><a class="contacts-item__link" href="https://htmlacademy.ru/study">HTML-Academy. Web-development</a></td>
+                    <td class="courses-date">2022 - till now</td>
+                </tr>
+              </table>
+
+              <li>
+                <table class="courses-item">
+                  <tr>
+                    <td><a class="contacts-item__link" href="https://rs.school/">RS-School. JS / FRONT-END. STAGE 0 (RU)</a></td>
+                    <td class="courses-date">2022 - till now</td>
+                  </tr>
+                </table>
+              </li>
+            </ul>
+
+          </section>
+
+          <section class="education details__item">
+            <h2 class="details-heading" id="education">Education</h2>
+
+            <table>
+              <tr>
+                <td class="education-item"><span class="education-item__programm">"Technosphere safety"</span><br>at Moscow State Agriculture University</td>
+                <td class="education-item">2012&nbsp;-&nbsp;2016</td>
+              </tr>
+            </table>
+
+          </section>
+
+          <div class="language details__item">
+            <h2 class="details-heading" id="language">Language</h2>
+
+            <table>
+              <tr>
+                <td class="language-item">B2</td>
+                <td class="language-item">Intermediate</td>
+              </tr>
+            </table>
+
+            <a class="language__link" href="https://postimg.cc/bZpdq5bF" target="_blank">
+              <img class="language__image" title="link to high-resolution"  width="300" height="200" src="./assets/img/eng.png" alt="Language level proof">
+            </a>
+          </div>
+
+          <section class="experience details__item">
+            <h2 class="details-heading" id="experience">Experience</h2>
+
+            <dl class="experience-list">
+              <dt class="experience-list__item">A-Plus Developement</dt>
+              <dd class="experience-list__definition">Health and safety specialist at large construction sites (IKEA, Toyota, AGC)<br><i>(2016-2019)</i></dd>
+
+              <dt class="experience-list__item">PepsiCo</dt>
+              <dd class="experience-list__definition">Health and safety specialist at production plant<br><i>(2019-2022)</i></dd>
+
+              <dt class="experience-list__item">Continental Tires</dt>
+              <dd class="experience-list__definition">Health, safety and sustainability business-partner in main-office<br><i>(2022-2022)</i></dd>
+            </dl>
+          </section>
+
+          <section class="projects details__item">
+            <h2 class="details-heading" id="projects">Projects</h2>
+
+            <ul class="projects-list">
+              <li class="projects-item">
+                <a class="project-link" title="Desktop version of a web-page" href="https://gudkovsky.github.io/Sedona.Web-site/" target="_blank">
+                  <h3 class="projects-link__heading">Sedona. Travel site</h3>
+                  <img class="projects-link__image" src="./assets/img/project-preview-sedona.png" alt="Sedona project preview" width="300">
+                </a>
+
+              </li>
+            </ul>
+
+          </section>
+
+          <section class="goals details__item">
+            <h2 class="details-heading" id="goals">Goals and priorities</h2>
+
+            <h3 class="goals-list__heading">My goals:</h3>
+            <ul class="goals-list">
+              <li class="goals-list__item">Join a team in an interestion project in web-development;</li>
+              <li class="goals-list__item">Grow as a professional, get an actual skills for success work;</li>
+              <li class="goals-list__item">Build a network for my future;</li>
+              <li class="goals-list__item">Find ways for self-realisation;</li>
+            </ul>
+
+            <h3 class="goals-list__heading">My priorities:</h3>
+            <ul class="priorities">
+              <li class="goals-list__item priorities__description">Self-developement and team-work;</li>
+            </ul>
+
+            <h3 class="goals-list__heading">My strenghts:</h3>
+            <ul class="strenghts">
+              <li class="goals-list__item strenghts__description">Creative, self-motivative, self-educating, structured work, multi-tasking, always targeting a high-plank;</li>
+            </ul>
+
+          </section>
+        </section>
+      </div>
+    </main>
+
+
+    <footer class="index-footer">
+      <div class="footer-wrapper">
+        <ul class="copyright-list">
+          <li class="copyright-item">
+            &#169; 2022
+          </li>
+
+          <li class="copyright-item">
+            <a class="copyright-link" href="https://github.com/gudkovsky">Gudkovsky</a>
+          </li>
+        </ul>
+
+
+        <a class="footer-link" href="https://rs.school/js-stage0/" target="_blank">
+          <img src="./assets/logo-rs.svg" alt="RS-School logo" width="100" height="100">
+        </a>
+
+        <a class="arrow-link" href="#navigation">
+        <img src="./assets/icons/top-arrow.svg" alt="arrow back to header" height="30">
+        </a>
+
+      </div>
+    </footer>
+
+</body>
+
+
+</html>

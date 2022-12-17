@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.index-page {
+  height: 100%;
+  background-color: #e5e5e5;
+}
+
+.page-body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1200px;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
+}
+
+.main-content {
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Navigation block */
+
+.navigation {
+  padding-top: 250px;
+  position: relative;
+  width: 100%;
+  background-image: url(./assets/img/bg-header.png);
+  background-repeat: no-repeat;
+  box-shadow: 0px 11px 8px 0px rgba(34, 60, 80, 0.2);
+
+
+}
+
+.navigation-item {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation__list {
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+
+}
+
+.navigation__link {
+  text-decoration: none;
+  color:rgb(240, 240, 240);
+  font-weight: 800;
+  padding: 30px;
+  transition: .3s;
+}
+
+.navigation__link:active, .navigation__link:visited {
+  color:rgb(210, 210, 210);
+}
+
+.navigation__link:hover {
+  color:rgb(255, 255, 255);
+}
+
+
+/* User-picture + description */
+
+.main-content__head-section {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+  border-bottom: 15px solid rgb(200, 198, 215);
+}
+
+.user-pic {
+border-radius: 50%;
+}
+
+.main-heading {
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.main-description {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* Details */
+
+.details {
+ display: grid;
+ margin-bottom: 40px;
+ grid-template-columns: repeat(2, auto);
+ gap: 20px;
+}
+
+.details__item {
+  padding: 20px;
+}
+
+.details li {
+  list-style-type: none;
+}
+
+.details-heading {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Contacts */
+
+.contacts-item + .contacts-item {
+  padding-top: 10px;
+}
+
+.contacts-item {
+  margin-left: 40px;
+
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  position: relative;
+}
+
+.location {
+  position: relative;
+}
+
+.location::before {
+content: "";
+position: absolute;
+left: -30px;
+width: 20px;
+height: 20px;
+background-image: url(./assets/icons/location.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.email {
+  position: relative;
+}
+
+.email::before {
+content: "";
+position: absolute;
+left: -30px;
+width: 20px;
+height: 20px;
+background-image: url(./assets/icons/email.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.github {
+  position: relative;
+}
+
+.github::before {
+content: "";
+position: absolute;
+left: -30px;
+width: 20px;
+height: 20px;
+background-image: url(./assets/icons/github.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.telegram {
+  position: relative;
+}
+
+.telegram::before {
+content: "";
+position: absolute;
+left: -30px;
+width: 20px;
+height: 20px;
+background-image: url(./assets/icons/telegram.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.discord {
+  position: relative;
+}
+
+.discord::before {
+content: "";
+position: absolute;
+left: -30px;
+width: 20px;
+height: 20px;
+background-image: url(./assets/icons/discord.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.contacts-link:hover {
+  opacity: 70%;
+}
+
+.details__item:nth-child(2n) {
+border-right: 1px solid rgba(20, 20, 20, 0.1);
+}
+
+
+/* Skills */
+
+.skills-table {
+  border-spacing: 10px;
+}
+
+.skills-table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* code */
+
+.code-example__item {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Courses */
+
+.courses-item {
+  border-spacing: 10px;
+}
+
+.courses-item td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contacts-item__link {
+  text-decoration: none;
+  color:rgb(20, 20, 20);
+}
+
+.contacts-item__link:hover {
+  opacity: 70%;
+}
+
+.courses-date {
+  font-weight: 800;
+  border: none;
+}
+
+.education-item__programm {
+  font-weight: 800;
+  font-size: 1.1em;
+
+}
+
+.education-item + .education-item {
+  padding-left: 60px;
+  font-size: large;
+}
+
+.language-item + .language-item {
+  padding-left: 20px;
+  font-size: large;
+}
+
+.language__link:hover {
+  opacity: 70%;
+}
+
+/* Experience */
+
+.experience-list__item {
+  font-weight: 800;
+  font-size: 18px;
+  color: rgb(103, 105, 124);
+}
+
+.experience-list__definition {
+  display: inline-block;
+
+}
+
+.experience-list__item  {
+margin-top: 20px;
+}
+
+/* projects */
+
+.project-link {
+  text-decoration: none;
+  color:rgb(20, 20, 20);
+  transition: .3s;
+}
+
+.project-link:hover {
+  opacity: 70%;
+}
+
+/* goals  */
+.goals-list__heading {
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: 800;
+}
+
+.goals-list__item {
+ padding-left: 30px;
+}
+
+/* FOOTER */
+
+.index-footer {
+  height: 120px;
+  /* background-image: url(./assets/img/bg-footer.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-wrapper {
+  width: 1000px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright-list {
+  list-style-type: none;
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link:hover {
+  opacity: 70%;
+}
+
+.copyright-link {
+  text-decoration: none;
+  color: black;
+  transition: .3s;
+}
+
+.arrow-link {
+  align-items: center;
+  transition: .3s;
+}
+
+.arrow-link:hover {
+  opacity: 70%;
+}
